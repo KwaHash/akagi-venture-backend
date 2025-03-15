@@ -1,0 +1,28 @@
+plans:
+  # - id: 1
+  #   limit: 60
+  #   type: event
+  #   name: nousei
+  #   label: 前橋農政課×bacon イベントプラン
+  #   short: 前橋農政課×bacon
+  #   nickname: nousei
+  #   image: bbq_carryon.png
+  #   description: |
+  #     <p>前橋農政課×bacon企画のイベントプラン。</p>
+  #     <p><strong>開催場所</strong><br>芝生広場<br>7/29,7/30<br>17-19時<br>先着60名</p>
+  #     <p><strong>開催日時</strong><br>7/29,7/30<br>17-19時<br>先着60名</p>
+  #     <p><strong>定員</strong><br>先着60名</p>
+  #     <p><strong>価格</strong><br>大人： 5,000円<br>小学生： 2,500円<br>未就学児：無料（イスは持参してください）</p>
+  #     <p><strong>食材</strong><br>上州牛まえばし 150g（小学生 100g）<br>福豚 150g（小学生 100g）<br>焼き野菜<br>ご飯</p>
+  #     <p><strong>飲み物</strong><br>生ビール<br>ハイボール<br>サワー<br>赤、白ワイン<br>フルーツシロップ５種類（炭酸水や水やサワーで割ってお飲みください）</p>
+  #   courses:
+  #     - id: 1
+  #       label: ディナータイム
+  #       start: 17:00
+  #       end: 19:00
+  #   eventDate:
+  #     - 2023-07-29
+  #     - 2023-07-30
+  #   availableNumber:
+  #     min: 1
+  #     max: 6
