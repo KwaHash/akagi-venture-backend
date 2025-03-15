@@ -1,0 +1,633 @@
+// import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+/** ref */
+import Mail from '@ioc:Adonis/Addons/Mail'
+import IrregularReservationModel from 'App/Models/IrregularReservation'
+import LineUserModel from 'App/Models/LineUser'
+import Line from 'App/Controllers/Http/LineController'
+import Helper from 'App/Helper'
+
+/** helper */
+const helper = new Helper()
+
+/** lib */
+import { DateTime } from 'luxon'
+const fs = require('fs')
+const yaml = require('js-yaml')
+
+const path = require('path')
+const accessorPath = path.join(__dirname, '../../../calendar/GoogleCalendarAccessor')
+const GoogleCalendarAccessor = require(accessorPath)
+
+/** params/data */
+const irregularFilePath = 'data/master/irregular.yaml'
+const localCalendarId =
+  'c_af4d57fd48653c5e78b5692416efec40d094f4db547c61bb63857cd58aa96624@group.calendar.google.com'
+const prodCalendarId =
+  'c_c17cd18a44c4dadd00a708ac8e5a4dacdedc8bad248ca58931ecc53d10a9676e@group.calendar.google.com'
+
+// local確認用カレンダーURL
+// https://calendar.google.com/calendar/embed?src=c17cd18a44c4dadd00a708ac8e5a4dacdedc8bad248ca58931ecc53d10a9676e%40group.calendar.google.com&ctz=Asia%2FTokyo
+
+export default class IrregularReservationsController {
+  public loadYaml(filepath) {
+    const yamlText = fs.readFileSync(filepath, 'utf8')
+    return yaml.load(yamlText)
+  }
+
+  /**
+   * routerからの予約登録
+   */
+  public async create({ request, response }) {
+    interface Params {
+      line_user_id?: number
+      plan_id?: number
+      start_time?: any // yyyy-mm-dd HH:mm:ssを想定
+      end_time?: any
+      num_adult?: number
+      num_kids?: number
+      tel?: string
+      linename?: string
+    }
+
+    let params: Params
+    try {
+      params = JSON.parse(request.body())
+    } catch {
+      params = request.body()
+    }
+
+    const ENVIRONMENT = helper.getEnvironment(request)
+
+    const statusData = await this.creating({
+      request: params,
+      ENVIRONMENT,
+    })
+    return helper.frontOutput(response, statusData)
+  }
+
+  /**
+   * 予約登録の実体
+   * @param request      params情報
+   * @param ENVIRONMENT  env情報(helper.getEnvironment)
+   */
+  public async creating({ request, ENVIRONMENT }) {
+    let result: {
+      status: number
+      reservationId?: number | null
+      message?: string | null
+    } = { status: 400 }
+
+    interface Params {
+      line_user_id?: number // lineUsersのprimary key
+      plan_id?: number
+      start_time?: any // yyyy-mm-dd HH:mm:ssを想定
+      end_time?: any
+      num_adult?: number
+      num_kids?: number
+      tel?: string
+      linename?: string
+    }
+
+    let params: Params
+    params = request
+
+    if (
+      !params.line_user_id ||
+      !params.plan_id ||
+      !params.start_time ||
+      !params.end_time ||
+      !params.tel ||
+      !params.linename ||
+      !params.num_adult
+    ) {
+      return {
+        status: 422,
+        reservationId: null,
+        message: 'Invalid parameter error.',
+      }
+    }
+
+    const now = DateTime.local()
+    const regTime = { created_at: now, updated_at: now }
+    const upTime = { updated_at: now }
+    const sum = Number(params.num_adult) + Number(params.num_kids)
+
+    try {
+      const irregular = this.loadYaml(irregularFilePath)
+      const targetPlanData = params.plan_id
+        ? irregular.plans.find((plan) => Number(plan.id) === Number(params.plan_id))
+        : null
+      /** LineUserIdが登録済みであるかの確認 */
+      let lineUser = await LineUserModel.find(params.line_user_id)
+      if (!lineUser) {
+        // 登録されていなければ返却
+        return {
+          status: 404,
+          reservationId: null,
+          message: 'LineUser not found.',
+        }
+      }
+
+      // admin以外で予約がすでにある場合には返却
+      const args = {
+        id: lineUser.id,
+        isFuture: 1,
+        withReservations: 1,
+      }
+      const lineUserModel = new LineUserModel()
+      const lineUserDetail = await lineUserModel.getDetail(args)
+      if (!lineUserDetail.admin.length && lineUserDetail.irregularReservation.length) {
+        return {
+          status: 422,
+          reservationId: null,
+          message: 'irregular reservation is already existed.',
+        }
+      }
+
+      /**
+       * 予約可能かどうか確認
+       *  DBからstart_timeからendTimeに含まれる予約をすべて取得
+       *  タイプごとに整理して、data/irregular.yamlのlimitを確認して判定
+       */
+      const checkStatus = await this.getReservesStatus({
+        start_time: params.start_time,
+        plan_id: params.plan_id,
+        sum,
+      })
+      if (!checkStatus.canReserves) {
+        return {
+          status: 200,
+          reservationId: null,
+          message: 'The reservation was full.',
+        }
+      }
+
+      /**
+       * DBに仮予約を発行
+       */
+      const insertData = {
+        event_id: null,
+        flag: 10,
+        ...params,
+        ...regTime,
+      }
+
+      // 登録
+      const reservationModel = new IrregularReservationModel()
+      reservationModel.fill(insertData)
+      await reservationModel.save()
+
+      /**
+       * ここでもう一度予約が本当にできるか確認する
+       */
+      const secondCheckStatus = await this.getReservesStatus({
+        start_time: params.start_time,
+        plan_id: params.plan_id,
+        sum,
+      })
+
+      // 予約不可であればflag=998に更新しフロントに返却
+      if (!secondCheckStatus.canReserves) {
+        try {
+          const updateData = {
+            flag: 998,
+            ...upTime,
+          }
+          // 更新するデータをmergeして
+          reservationModel.merge(updateData)
+          // 更新
+          await reservationModel.save()
+          return {
+            status: 200,
+            reservationId: null,
+            message: 'The reservation was full.',
+          }
+        } catch (error) {
+          console.log(error)
+          return {
+            status: 500,
+            reservationId: null,
+            message: 'An error occurred during update record flag.',
+          }
+        }
+      }
+
+      /**
+       * Googleカレンダーに予定を追加
+       * @ref https://developers.google.com/calendar/api/quickstart/nodejs?hl=ja
+       */
+      let eventId
+      try {
+        const calendarId = ENVIRONMENT.name === 'production' ? prodCalendarId : localCalendarId
+        const calendar = new GoogleCalendarAccessor(calendarId)
+
+        /** アクセサーを使ってカレンダーに予定を新規追加 */
+        const description = `
+          名前: ${params.linename}様
+          電話番号: ${params.tel}
+          人数(大人): ${params.num_adult}
+          人数(小学生): ${params.num_kids}
+        `
+        const calendarResult = await calendar.insert({
+          summary: `【予約:${targetPlanData.short}】 ${params.linename}様：${sum}名`,
+          description: description,
+          startTime: DateTime.fromSQL(params.start_time).toISO().toString(),
+          endTime: DateTime.fromSQL(params.end_time).toISO().toString(),
+        })
+        if (calendarResult.error || calendarResult.data.error) {
+          console.error(calendarResult)
+          return {
+            status: 500,
+            reservationId: null,
+            message: 'An error occurred during calendar registration.',
+          }
+        }
+        /** エラーなければeventIdが発行 */
+        eventId = calendarResult.data.id
+      } catch (error) {
+        console.log(error)
+        return {
+          status: 500,
+          reservationId: null,
+          message: 'An error occurred during calendar registration.',
+        }
+      }
+
+      /** DBにデータを登録 */
+      const updateData = {
+        event_id: eventId,
+        flag: 1,
+        ...upTime,
+      }
+
+      // 更新するデータをmergeして
+      reservationModel.merge(updateData)
+      // 更新
+      await reservationModel.save()
+
+      const reservation = reservationModel.toJSON() // serialize
+
+      // line送信
+      const lineData: {
+        u_id: string | null
+        rsvData: any
+        plan: any
+      } = {
+        u_id: lineUser.u_id,
+        rsvData: reservation,
+        plan: targetPlanData,
+      }
+      const line = new Line()
+      await line.sendCreatedIrregularReservation(lineData)
+
+      // メール送信
+      if (ENVIRONMENT.name === 'production') {
+        const plan = {
+          plan: targetPlanData,
+          start_time: DateTime.fromSQL(params.start_time).toFormat('yyyy/MM/dd HH:mm').toString(),
+          end_time: DateTime.fromSQL(params.end_time).toFormat('yyyy/MM/dd HH:mm').toString(),
+        }
+        const data = { ENVIRONMENT, reservation, plan }
+        const subject: string = `【${targetPlanData.short}イベント】 新規ご予約`
+        const fromEmail: string | undefined = process.env.FROM_EMAIL
+        const fromName: string | undefined = process.env.FROM_NAME
+        if (fromEmail && fromName) {
+          await Mail.send((message) => {
+            message
+              .from(fromEmail, fromName)
+              .to('google@akagi-venture.jp')
+              .cc('michi@fukubuta.co.jp')
+              .cc('imauji@cicac.jp')
+              .subject(subject)
+              .htmlView('emails/irregularReservation_create', data)
+              .textView('emails/irregularReservation_create-text', data)
+          })
+        }
+      }
+
+      result = {
+        status: 200,
+        reservationId: reservation.id,
+      }
+    } catch (error) {
+      result = {
+        status: 500,
+        reservationId: null,
+        message: error.message,
+      }
+    }
+    return result
+  }
+
+  /**
+   * リスト取得
+   */
+  public async list({ request, response }) {
+    interface Result {
+      status: number
+      list?: object | null
+    }
+    interface Params {
+      line_user_id?: number
+      startTime?: string
+      endTime?: string
+    }
+
+    interface Args {
+      line_user_id?: number
+      between?: any
+    }
+
+    let params: Params = request.qs()
+    let args: Args = {}
+
+    if (!params.line_user_id) {
+      helper.frontOutput(response, {
+        status: 422,
+        message: 'Invalid parameter error.',
+      })
+      return
+    }
+
+    // stringで渡ってきたparamsをパース
+    if (params.line_user_id) args.line_user_id = Number(params.line_user_id)
+    if (params.startTime && params.endTime) args.between = [params.startTime, params.endTime]
+
+    const rsvModel = new IrregularReservationModel()
+    const reserves = await rsvModel.get(args)
+
+    const irregular = this.loadYaml(irregularFilePath)
+    const resultReserveData: {
+      meta: object
+      data: any
+    } = {
+      meta: reserves.meta,
+      data: [],
+    }
+    reserves.data.forEach((reserve) => {
+      const rsvData = reserve.toJSON()
+      const targetPlan = irregular.plans.find((plan) => Number(plan.id) === Number(rsvData.plan_id))
+      rsvData.plan = targetPlan
+      resultReserveData.data.push(rsvData)
+    })
+
+    let result: Result = {
+      status: 200,
+      list: resultReserveData,
+    }
+
+    helper.frontOutput(response, result)
+  }
+
+  /**
+   * 空き取得
+   *  params:
+   *    allDate: Array<Object{ date: Datetime }>
+   *    plan_id: number
+   */
+  public async empty({ request, response }) {
+    /** setting */
+    const params = request.all()
+
+    if (!params.plan_id || !params.allDate) {
+      return helper.frontOutput(response, {
+        status: 422,
+        message: 'Invalid parameter error.',
+      })
+    }
+
+    const days: any = []
+    Object.keys(params.allDate).forEach((r) => {
+      days.push(params.allDate[r])
+    })
+
+    interface Result {
+      status: number
+      empty?: any
+    }
+
+    let result: Result = {
+      status: 200,
+      empty: [],
+    }
+
+    const irregular = this.loadYaml(irregularFilePath)
+    const targetPlanData = params.plan_id
+      ? irregular.plans.find((plan) => Number(plan.id) === Number(params.plan_id))
+      : null
+    const eventDates = targetPlanData ? targetPlanData.eventDate : []
+    eventDates.forEach(
+      (row, i, raw) => (raw[i] = DateTime.fromJSDate(row).toFormat('yyyy-MM-dd').toString())
+    )
+
+    await Promise.all(
+      days.map(async (d) => {
+        const obj: { date: string; canReserve: boolean } = { date: d.date, canReserve: false }
+        if (eventDates.includes(d.date)) {
+          const checkStatus = await this.getReservesStatus({
+            start_time: `${d.date} ${targetPlanData.courses[0].start}:00`,
+            plan_id: params.plan_id,
+            sum: 1, // 最低人数で空きがあれば予約可として返却
+          })
+          if (checkStatus.canReserves) {
+            obj.canReserve = true
+            result.empty.push(obj)
+          }
+        }
+      })
+    )
+
+    helper.frontOutput(response, result)
+  }
+
+  /**
+   * 予約キャンセル
+   */
+  public async delete({ request, response }) {
+    let result: {
+      status: number
+      deleted?: boolean | null
+      message?: string | null
+    } = { status: 400 }
+
+    interface Params {
+      id: number
+    }
+
+    let params: Params
+    try {
+      params = JSON.parse(request.body())
+    } catch {
+      params = request.body()
+    }
+
+    if (!params.id) {
+      return helper.frontOutput(response, {
+        status: 422,
+        message: 'Invalid parameter error. [id]',
+      })
+    }
+
+    try {
+      // 登録済みであるかの確認
+      let target = await IrregularReservationModel.query()
+        .where('id', params.id)
+        .andWhere('flag', 1)
+        .first()
+      if (!target) {
+        // 登録されていなければ返却
+        return helper.frontOutput(response, {
+          status: 404,
+          message: 'Reservation not found.',
+        })
+      }
+
+      /** init */
+      const ENVIRONMENT = helper.getEnvironment(request)
+      const calendarId = ENVIRONMENT.name === 'production' ? prodCalendarId : localCalendarId
+      const calendar = new GoogleCalendarAccessor(calendarId)
+
+      /**
+       * Googleカレンダーの予定を削除
+       * @ref https://developers.google.com/calendar/api/quickstart/nodejs?hl=ja
+       */
+      try {
+        /** 既存の予約を削除 */
+        const calendarDelete = await calendar.delete({
+          eventId: target.event_id,
+        })
+        if (calendarDelete.data.error) {
+          console.error(calendarDelete)
+          return helper.frontOutput(response, {
+            status: 500,
+            deleted: false,
+            message: 'An error occurred during calendar deletion.',
+          })
+        }
+      } catch (error) {
+        console.log(error)
+        return helper.frontOutput(response, {
+          status: 500,
+          deleted: false,
+          message: 'An error occurred during calendar deletion.',
+        })
+      }
+
+      /**
+       * targetレコードの削除
+       */
+      try {
+        const now = DateTime.local()
+        const time = { updated_at: now }
+        const updateData = {
+          flag: 999,
+          ...time,
+        }
+
+        // 更新するデータをmergeして
+        target.merge(updateData)
+        // 更新
+        const deleted = await target.save()
+
+        result = {
+          status: 200,
+          deleted: deleted.id ? true : false,
+        }
+      } catch (error) {
+        console.log(error)
+        return helper.frontOutput(response, {
+          status: 500,
+          deleted: false,
+          message: 'An error occurred during target record deletion.',
+        })
+      }
+
+      // メール送信
+      if (ENVIRONMENT.name === 'production' && target) {
+        const irregular = this.loadYaml(irregularFilePath)
+        const targetPlanData = target.plan_id
+          ? irregular.plans.find((plan) => target && Number(plan.id) === Number(target.plan_id))
+          : null
+        const json = target.toJSON()
+
+        const plan = {
+          label: targetPlanData.label,
+          start_time: DateTime.fromISO(json.start_time).toFormat('yyyy/MM/dd HH:mm'),
+          end_time: targetPlanData?.courses[0]?.end || '',
+        }
+        const data = {
+          ENVIRONMENT,
+          reservation: target,
+          plan,
+        }
+        const subject: string = `【${targetPlanData.label}】 ご予約キャンセル`
+        const fromEmail: string | undefined = process.env.FROM_EMAIL
+        const fromName: string | undefined = process.env.FROM_NAME
+        if (fromEmail && fromName) {
+          await Mail.send((message) => {
+            message
+              .from(fromEmail, fromName)
+              .to('google@akagi-venture.jp')
+              .cc('michi@fukubuta.co.jp')
+              .cc('imauji@cicac.jp')
+              .subject(subject)
+              .htmlView('emails/irregularReservation_cancel', data)
+              .textView('emails/irregularReservation_cancel-text', data)
+          })
+        }
+      }
+    } catch (error) {
+      result = {
+        status: 500,
+        message: error.message,
+      }
+    }
+    helper.frontOutput(response, result)
+  }
+
+  /**
+   * 予約状況を確認
+   */
+  public async getReservesStatus({ start_time, plan_id, sum }) {
+    let result: {
+      canReserves: boolean
+    } = {
+      canReserves: false,
+    }
+
+    if (!start_time || !plan_id) return result
+
+    /** DBから対象日の予約一覧を取得 */
+    const args: {
+      start_time: string
+      plan_id: number
+      flags: Array<number>
+    } = {
+      start_time,
+      plan_id,
+      flags: [1], // flag = 1のみ取得
+    }
+
+    const irregular = this.loadYaml(irregularFilePath)
+    const targetPlan = plan_id
+      ? irregular.plans.find((plan) => Number(plan.id) === Number(plan_id))
+      : null
+    const max = targetPlan ? Number(targetPlan.limit) : 0
+    const eventDates = targetPlan ? targetPlan.eventDate : []
+    eventDates.forEach(
+      (row, i, raw) => (raw[i] = DateTime.fromJSDate(row).toFormat('yyyy-MM-dd').toString())
+    )
+    const targetDate = DateTime.fromSQL(start_time).toFormat('yyyy-MM-dd').toString()
+
+    const rsvModel = new IrregularReservationModel()
+    const reserves = await rsvModel.get(args)
+    let rsvTotalMember = 0
+    reserves.data.forEach((row) => {
+      rsvTotalMember += Number(row.num_adult) + Number(row.num_kids)
+    })
+    if (reserves && rsvTotalMember + sum <= max && eventDates.includes(targetDate))
+      result.canReserves = true
+
+    return result
+  }
+}
