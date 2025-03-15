@@ -4,10 +4,8 @@ coverage
 .vscode
 .DS_STORE
 .env
-logs
 tmp
 
 tests/http
-logs/*
 
 data/credentials/*
