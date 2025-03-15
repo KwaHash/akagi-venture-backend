@@ -1,0 +1,28 @@
+@layout('emails/layouts/master')
+@section('content')
+
+<p>※このメールはシステムからの自動送信です</p>
+
+<p>お疲れ様です。以下内容にて新たにご予約が入りました。</p>
+
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br>
+■プラン名<br>
+BBQ BEER GARDEN<br>
+■予約日時<br>
+{{ plan.reservation_date }}　{{ reservation.start }}〜{{ reservation.end }}<br>
+<br>
+■ご予約者氏名<br>
+{{ reservation.linename }}様<br>
+■電話番号<br>
+{{ reservation.tel }}<br>
+■人数（大人）<br>
+{{ reservation.num_adult }}人<br>
+■人数（中学生以上）<br>
+{{ reservation.num_jr }}人<br>
+■人数（小学生）<br>
+{{ reservation.num_kids }}人<br>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+
+<p>ご確認よろしくお願いします。</p>
+
+@endsection

@@ -1,0 +1,28 @@
+@layout('emails/layouts/master')
+@section('content')
+
+※このメールはシステムからの自動送信です
+
+お疲れ様です。以下内容にて新たにご予約が入りました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■プラン名
+BBQ BEER GARDEN
+■予約日時
+{{ plan.reservation_date }}　{{ reservation.start }}〜{{ reservation.end }}
+
+■ご予約者氏名
+{{ reservation.linename }}様
+■電話番号
+{{ reservation.tel }}
+■人数（大人）
+{{ reservation.num_adult }}人
+■人数（中学生以上）
+{{ reservation.num_jr }}人
+■人数（小学生）
+{{ reservation.num_kids }}人
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ご確認よろしくお願いします。
+
+@endsection

@@ -1,0 +1,26 @@
+@layout('emails/layouts/master')
+@section('content')
+
+※このメールはシステムからの自動送信です
+
+お疲れ様です。以下内容にて新たにご予約が入りました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■プラン名
+{{ plan.plan.label }}
+■予約日時
+{{ plan.start_time }}〜{{ plan.end_time }}
+
+■ご予約者氏名
+{{ reservation.linename }}様
+■電話番号
+{{ reservation.tel }}
+■人数（大人）
+{{ reservation.num_adult }}人
+■人数（小学生）
+{{ reservation.num_kids }}人
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ご確認よろしくお願いします。
+
+@endsection

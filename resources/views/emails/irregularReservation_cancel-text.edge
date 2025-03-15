@@ -1,0 +1,25 @@
+@layout('emails/layouts/master')
+@section('content')
+
+
+お疲れ様です。以下予約がキャンセルされました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■プラン名
+{{ plan.label }}
+■日時
+{{ plan.start_time }} ~ {{ plan.end_time }}
+
+■ご予約者氏名
+{{ reservation.linename }}様
+■電話番号
+{{ reservation.tel }}
+■人数（大人）
+{{ reservation.num_adult }}人
+■人数（子供）
+{{ reservation.num_kids }}人
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ご確認よろしくお願いします。
+
+@endsection
