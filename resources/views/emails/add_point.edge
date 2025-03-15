@@ -1,0 +1,21 @@
+@layout('emails/layouts/master')
+@section('content')
+
+<p>※このメールはシステムからの自動送信です</p>
+
+<p>お疲れ様です。以下内容にてポイント付与がありました。</p>
+
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br><br>
+■ポイント数<br>
+{{ amount }} ポイント<br><br>
+■対象ユーザー<br>
+{{ linename }}<br><br>
+■付与店舗<br>
+{{ shopName }}<br><br>
+■付与日時<br>
+{{ updated_at }}<br><br>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+
+<p>よろしくお願いします。</p>
+
+@endsection
