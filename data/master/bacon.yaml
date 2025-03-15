@@ -1,0 +1,379 @@
+limit:
+  all: 8
+  bbq: 6
+  dayCamp: 4
+
+plans:
+  - id: 5
+    type: dayCamp
+    name: carryOnDayCamp
+    label: 道具持ち込みデイキャンププラン
+    nickname: 持デ
+    image: carryonDaycamp.jpg
+    description: 自前のキャンプ道具を使用して行うデイキャンププランです。タープ、テント、テーブル、イス、BBQコンロなど使用したい道具を持ち込んで自由にお過ごしいただけます。
+    notes:
+      - 焼き台や焚き火台をご利用の際は必ず焚き火シートをご持参ください。
+    prices:
+      - amount: 3300
+        per: 大人(中学生以上)
+        type: adult
+      - amount: 2200
+        per: 小学生
+        type: kids
+    priceNotes:
+      - ソロキャンプ希望のお客様の場合、大人料金￥5,000となります。
+      - ※人数分のご注文が必要（小学生以上）
+    courses:
+      - id: 6
+        label: フルタイム
+        start: 10:00
+        end: 17:00
+    service:
+      - BBQ用食材
+      - 施設利用料
+    equipment:
+      - 道具持ち込みプランの為、設備のご用意は各自でお願いいたします。
+      - 店舗にてレンタルできるものや購入品につきましては前もってお電話にてお問合せください。
+    businessHours:
+      - label: フルタイム
+        value: 10:00~17:00
+    availableNumber:
+      min: 2
+      max: 6
+      note: 子供人数要相談
+    carryOn:
+      food: 可能
+      drink: 可能
+      drinkNotes:
+        - 飲酒運転は絶対におやめください。
+    trash: 基本持ち帰り。ごみの引き取りの場合はゴミ袋を店舗にて購入。
+    animal: マナーを守れる方のみ同伴OK。
+    foods:
+      - 福豚グリル肉
+      - huttehayashiソーセージ
+      - グリル野菜
+      - おにぎり
+      - ☆インスタグラムフォローでマシュマロプレゼント
+  - id: 1
+    type: bbq
+    name: bonfire
+    label: 焚き火体験
+    nickname: 焚火
+    image: bonfire.png
+    description: 手ぶらで焚き火体験できるプラン。ゆったりとくつろげる空間で気軽に焚き火を楽しむことができます。
+    notes:
+      - 予約制となっておりますが、空きがある場合、当日でもお申込みいただけます。ご予約フォームよりご予約ください。
+      - 強風の時は危険なので、タープ(屋根)を外させてもらう場合があります。
+    prices:
+      - amount: 3600
+        per: サイト
+        type: site
+      - amount: 1100
+        per: １人（小学生以上）
+        type: adult
+    priceNotes:
+      - サイト利用料 + 体験料
+    courses:
+      - id: 1
+        label: ランチタイム
+        start: 11:00
+        end: 15:00
+      - id: 2
+        label: ディナータイム
+        start: 17:00
+        end: 21:00
+    service:
+      - 薪 1 束
+      - 施設利用料
+      - 機材利用料
+      - 追加薪 ¥980
+    equipment:
+      - 焚き火タープオクタ
+      - 焚き火台 L
+      - ジカロテーブル
+      - ローチェア
+      - トング
+      - グローブ
+      - 着火剤
+    businessHours:
+      - label: ランチタイム
+        value: 11:00~15:00
+      - label: ディナータイム(金・土のみ)
+        value: 17:00~21:00
+    businessHoursNotes:
+      - 4時間制となっておりますのでゆったりとおくつろぎいただけます。
+    availableNumber:
+      min: 2
+      max: 6
+    carryOn:
+      food: 焚き火を使用する食材の持ち込みはできません。
+      drink: ドリンクはお持ち込みいただくか、HutteHayashiで購入ください。
+    trash: お持ち込み品から出たゴミはお持ち帰りいただきますので、ゴミ袋をご持参ください。こちらでゴミを引き取る場合は、専用のゴミ袋をご購入いただいています。
+    animal: マナーを守れる方のみ同伴OK。
+
+  - id: 2
+    type: bbq
+    name: bbq
+    label: 手ぶら BBQ
+    nickname: 手ぶ
+    image: bbq.png
+    description: 手ぶらで BBQ できるプラン。準備も片付けも必要なしで、気軽に楽しむことができます。
+    notes:
+      - 予約制となっておりますが、空きがある場合、当日でもお申込みいただけます。ご予約フォームよりご予約ください。
+      - 強風の時は危険なので、タープ(屋根)を外させてもらう場合があります。
+    prices:
+      - amount: 4400
+        per: サイト
+        type: site
+      - amount: 3300
+        per: 大人(中学生以上)
+        type: adult
+      - amount: 2200
+        per: 小学生
+        type: kids
+    priceNotes:
+      - サイト利用料 + BBQ 料金
+      - ※人数分のご注文が必要（小学生以上）
+    courses:
+      - id: 3
+        label: ランチタイム
+        start: 11:00
+        end: 15:00
+    service:
+      - 食材
+      - 施設利用料
+      - 機材利用料
+    equipment:
+      - 焚き火タープオクタ
+      - 焚き火台 L
+      - ジカロテーブル
+      - ローチェア
+      - トング
+      - グローブ
+      - 着火剤
+      - BBQコンロ
+      - 箸
+      - トング
+      - 焼き網
+      - 食器類
+      - 追加炭 ¥900
+    equipmentNotes:
+      - ※鉄板はついておりません。
+    businessHours:
+      - label: ランチタイム
+        value: 11:00~15:00
+    businessHoursNotes:
+      - 4時間制となっておりますのでゆったりとおくつろぎいただけます。
+    availableNumber:
+      min: 2
+      max: 6
+    carryOn:
+      food: 可能
+      drink: 現地にてご注文、もしくはお持込ください。お得な飲み放題プランもございます。
+      drinkNotes:
+        - 飲酒運転は絶対におやめください。
+    trash: お持ち込み品から出たゴミはお持ち帰りいただきますので、ゴミ袋をご持参ください。こちらでゴミを引き取る場合は、専用のゴミ袋をご購入いただいています。
+    animal: マナーを守れる方のみ同伴OK。
+    foods:
+      - 福豚のグリル肉
+      - HutteHayashi ソーセージ
+      - グリル野菜
+      - ご飯
+      - スモワ
+    extraFood:
+      - 福豚のグリル肉
+      - ソーセージ
+      - グリル野菜
+      - ご飯
+      - スモワ
+    rentalItems:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+
+  - id: 3
+    type: bbq
+    name: carryOnBbq
+    label: BBQ 食材持ち込みプラン
+    nickname: BBQ
+    image: bbq_carryon.png
+    description: お好きな食材や飲み物を持ち込んで BBQ できるプラン。
+    notes:
+      - 予約制となっておりますが、空きがある場合、当日でもお申込みいただけます。ご予約フォームよりご予約ください。
+      - 強風の時は危険なので、タープ(屋根)を外させてもらう場合があります。
+    prices:
+      - amount: 9900
+        per: サイト
+        type: site
+    priceNotes:
+      - サイト利用料
+    courses:
+      - id: 4
+        label: ランチタイム
+        start: 11:00
+        end: 15:00
+    service:
+      - 施設利用料
+      - 機材利用料
+    equipment:
+      - 焚き火タープオクタ
+      - 焚き火台 L
+      - ジカロテーブル
+      - ローチェア
+      - トング
+      - グローブ
+      - 着火剤
+      - BBQ コンロ
+      - 焼き網
+      - 炭 ¥900(店舗で購入)
+    equipmentNotes:
+      - ※鉄板はついておりません。
+    businessHours:
+      - label: ランチタイム
+        value: 11:00~15:00
+    businessHoursNotes:
+      - 4時間制となっておりますのでゆったりとおくつろぎいただけます。
+    availableNumber:
+      min: 2
+      max: 6
+    carryOn:
+      food: 可
+      drink: お持ち込みください。
+      drinkNotes:
+        - 飲酒運転は絶対におやめください。
+    trash: お持ち込み品から出たゴミはお持ち帰りいただきますので、ゴミ袋をご持参ください。こちらでゴミを引き取る場合は、専用のゴミ袋をご購入いただいています。
+    animal: マナーを守れる方のみ同伴OK。
+    rentalItems:
+      - 10
+      - 11
+      - 12
+
+  - id: 4
+    type: dayCamp
+    name: dayCamp
+    label: 手ぶらデイキャンプ
+    nickname: デイ
+    image: daycamp.png
+    description: スノーピークのシェルターを利用して １日パークキャンピングできるプラン。
+    notes:
+      - 強風の時は危険なので、タープ(屋根)を外させてもらう場合があります。
+    prices:
+      - amount: 22000
+        per: サイト
+        type: site
+    priceNotes:
+      - サイト利用料
+    courses:
+      - id: 5
+        label: フルタイム
+        start: 10:00
+        end: 17:00
+    service:
+      - 施設利用料
+      - 機材利用料
+    equipment:
+      - リビングシェルアイボリー又はランドロックアイボリー
+      - タープ
+      - 焚き火台
+      - ガスコンロ
+      - テーブル
+      - チェア
+      - ケトル
+      - 調理道具セット
+      - 食器
+    businessHours:
+      - label: フルタイム
+        value: 10:00~17:00
+    availableNumber:
+      min: 2
+      max: 6
+      note: 子供人数要相談
+    carryOn:
+      food: 可能
+      drink: 現地にてご注文、もしくはお持込ください。お得な飲み放題プランもございます。
+      drinkNotes:
+        - 飲酒運転は絶対におやめください。
+    trash: お持ち込み品から出たゴミはお持ち帰りいただきますので、ゴミ袋をご持参ください。こちらでゴミを引き取る場合は、専用のゴミ袋をご購入いただいています。
+    animal: マナーを守れる方のみ同伴OK。
+    option:
+      - name: foods
+        label: BBQ食材
+        items:
+          - name: prices
+            label: 料金
+            prices:
+              - amount: 3300
+                per: 大人(中学生以上)
+              - amount: 2200
+                per: 小学生
+          - name: foods
+            label: 食材リスト
+            items:
+              - 福豚のグリル肉
+              - HutteHayashi ソーセージ
+              - グリル野菜
+              - ご飯
+              - スモワ
+          - name: extraFoods
+            label: 追加食材リスト
+            items:
+              - 福豚のグリル肉
+              - ソーセージ
+              - グリル野菜
+              - ご飯
+              - スモワ
+        notes: 追加食材のご注文は３日前までにお願いいたします。人数分のご注文が必要です。
+    rentalItems:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+
+rentalItems:
+  - id: 1
+    label: フィールドバリスタ コーヒーセット
+    price: 2200
+  - id: 2
+    label: フィールドクッカー
+    price: 2200
+  - id: 3
+    label: HOME&CAMP バーナー ガス缶別売り
+    price: 1500
+  - id: 4
+    label: ソフトクーラー 保冷剤付き
+    price: 1500
+  - id: 5
+    label: クラシックケトル
+    price: 1100
+  - id: 6
+    label: フラットバーナー ガス缶別売り
+    price: 1500
+  - id: 7
+    label: まな板セット
+    price: 880
+  - id: 8
+    label: キッチンツールセット
+    price: 1100
+  - id: 9
+    label: トラメジーノ ホットサンドメーカー
+    price: 1100
+  - id: 10
+    label: ピクニックテント
+    price: 2200
+  - id: 11
+    label: ローテーブル
+    price: 1500
+  - id: 12
+    label: ローチェア
+    price: 880
