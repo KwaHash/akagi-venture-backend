@@ -4,6 +4,68 @@ limit:
   dayCamp: 4
 
 plans:
+  - id: 6
+    type: bbq
+    name: bbqBeerGarden
+    label: BBQ ビアガーデン
+    nickname: ビアガ
+    image: bbqbeergarden.jpg
+    description: 赤城山の麓でG.W3日間限定の特別なプランです。絶品の福豚やHütte Hayashi自慢のソーセージ、赤城山のプロシュートを堪能できます。道の駅まえばし赤城でバーベキューを楽しもう！
+    prices:
+      - amount: 5500
+        per: 大人
+        type: adult
+      - amount: 3500
+        per: 中学生以上
+        type: junior
+      - amount: 2500
+        per: 小学生
+        type: kids
+    priceNotes:
+      - ※未就学児は無料です。
+      - ※人数分のご注文が必要（小学生以上）
+      - ※追加料金2,000円/人にて最終時間までお楽しみいただけます。
+    courses:
+      - id: 7
+        label: ディナー
+        start: 17:00
+        end: 21:00
+    service:
+      - バーベキュー・食べ放題
+      - 生ビール・飲み放題
+    equipment:
+      - 焚き火タープオクタ
+      - 焚き火台 L
+      - ジカロテーブル
+      - ローチェア
+      - トング
+      - グローブ
+      - 着火剤
+      - BBQコンロ
+      - 箸
+      - トング
+      - 焼き網
+      - 食器類
+    businessHours:
+      - label: ディナー
+        value: 17:00~21:00
+    availableNumber:
+      min: 2
+      max: 6
+    carryOn:
+      food: 可能
+      drink: 可能
+      drinkNotes:
+        - 飲酒運転は絶対におやめください。
+    trash: お持ち込み品から出たゴミはお持ち帰りいただきますので、ゴミ袋をご持参ください。こちらでゴミを引き取る場合は、専用のゴミ袋をご購入いただいています。
+    animal: マナーを守れる方のみ同伴OK。
+    foods:
+      - 福豚グリル肉
+      - huttehayashiソーセージ
+      - グリル野菜
+      - 赤城山プロシュート原木
+      - ごはん
+      - サラダ
   - id: 5
     type: dayCamp
     name: carryOnDayCamp
