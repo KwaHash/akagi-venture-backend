@@ -1031,6 +1031,10 @@ export default class ReservationsController {
       result.courses = []
     }
 
+    if (date === '2025-05-04' || date === '2025-05-05') {
+      result.courses.push(7)
+    }
+
     return result
   }
 }
