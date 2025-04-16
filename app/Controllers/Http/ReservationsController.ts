@@ -1031,8 +1031,10 @@ export default class ReservationsController {
       result.courses = []
     }
 
-    if (date === '2025-05-04' || date === '2025-05-05') {
-      result.courses.push(7)
+    if (date === '2025-05-03' || date === '2025-05-04' || date === '2025-05-05') {
+      result.courses.includes(7) || result.courses.push(7)
+    } else {
+      result.courses = result.courses.filter((n) => n !== 7)
     }
 
     return result
