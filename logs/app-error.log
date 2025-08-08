@@ -1,0 +1,1247 @@
+[ 2025-04-16 15:54:23 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-16 15:55:00 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-16 15:55:30 ]
+{ status: 404, message: 'Reservation not found.' }
+--------------------
+[ 2025-04-16 16:00:46 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-16 18:21:07 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-17 8:39:35 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-17 12:58:08 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-17 12:58:16 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-17 14:23:31 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-17 14:29:14 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-17 15:22:29 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-18 13:00:55 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-18 13:01:37 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 9:58:08 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 10:56:56 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 10:58:01 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 10:58:18 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 10:58:25 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 12:50:11 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 12:50:25 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 12:51:29 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 12:55:42 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 12:59:42 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 13:00:41 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 13:22:30 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 14:29:56 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 14:49:38 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 14:50:12 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 14:50:50 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 14:51:20 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 17:09:00 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 17:54:25 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-19 21:33:27 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 7:57:59 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 9:35:40 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 10:21:45 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 14:51:50 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 18:04:09 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 18:18:55 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 19:26:02 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 20:08:41 ]
+{ status: 422, message: 'Invalid parameter error.' }
+--------------------
+[ 2025-04-20 22:05:05 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 22:07:20 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-20 22:14:17 ]
+{ status: 404, message: 'Reservation not found.' }
+--------------------
+[ 2025-04-21 12:40:38 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 14:24:26 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 14:24:55 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 14:26:47 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 14:27:01 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 15:32:46 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 15:50:39 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 18:44:16 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 19:40:51 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 19:41:29 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-21 20:12:02 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-22 9:12:43 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-22 16:23:12 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-22 17:39:38 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-22 19:47:48 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-22 19:51:48 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-23 12:00:04 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-23 16:48:40 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-24 9:23:59 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-24 9:25:46 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-24 13:16:03 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-24 21:13:56 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 7:59:32 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 10:05:39 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 13:08:19 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 13:53:17 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 13:56:13 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 15:16:25 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 15:20:41 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 17:57:07 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 17:57:30 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-25 19:36:56 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-26 7:33:21 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-26 8:42:06 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-26 10:13:53 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-26 11:52:53 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-26 12:17:47 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-26 16:06:03 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-26 19:03:58 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-27 7:56:38 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-27 12:45:35 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-27 14:44:13 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-27 14:44:37 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-27 16:55:37 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-29 9:38:00 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-29 9:53:18 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-04-29 16:39:54 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-01 11:09:13 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-01 17:36:31 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-01 19:12:13 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-02 18:14:10 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-02 19:48:31 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-03 20:55:10 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-04 22:52:49 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-04 22:53:56 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-06 19:58:10 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-09 15:34:24 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-09 23:09:24 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-10 17:47:03 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-12 11:03:17 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-12 20:10:12 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-13 3:56:19 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+insert into `posts` (`content`, `created_at`, `external_link`, `flag`, `publish_date`, `site`, `slug`, `title`, `type`, `updated_at`) values ('<p>てｓ</p>', '2025-05-16 14:50:46', 0, 1, '2025-05-16T14:50:46.346+09:00', 4, 'u0parfg2', 'テスト', 1, '2025-05-16 14:50:46') - Incorrect datetime value: '2025-05-16T14:50:46.346+09:00' for column `avp_prod`.`posts`.`publish_date` at row 1
+[ 2025-05-16 14:50:46 ]
+{ status: 400 }
+--------------------
+insert into `posts` (`content`, `created_at`, `external_link`, `flag`, `publish_date`, `site`, `slug`, `title`, `type`, `updated_at`) values ('<p>テスト</p>\n<p>&nbsp;</p>', '2025-05-16 14:51:21', 0, 2, '2025-05-16T14:51:21.288+09:00', 1, 'kf5dyooi', 'テスト', 1, '2025-05-16 14:51:21') - Incorrect datetime value: '2025-05-16T14:51:21.288+09:00' for column `avp_prod`.`posts`.`publish_date` at row 1
+[ 2025-05-16 14:51:21 ]
+{ status: 400 }
+--------------------
+insert into `posts` (`content`, `created_at`, `external_link`, `flag`, `publish_date`, `site`, `slug`, `title`, `type`, `updated_at`) values ('<p>テスト</p>', '2025-05-16 14:51:51', 0, 1, '2025-05-16T14:51:51.275+09:00', 2, 'vfo8i7z6', 'テスト', 1, '2025-05-16 14:51:51') - Incorrect datetime value: '2025-05-16T14:51:51.275+09:00' for column `avp_prod`.`posts`.`publish_date` at row 1
+[ 2025-05-16 14:51:51 ]
+{ status: 400 }
+--------------------
+[ 2025-05-16 19:05:41 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-17 21:30:54 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-18 16:57:02 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-18 16:57:33 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-18 16:58:16 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-18 16:58:53 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-19 7:57:23 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-20 5:06:40 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-20 9:21:14 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-22 21:26:36 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-27 3:05:12 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-27 11:47:28 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-27 11:47:53 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-29 12:19:13 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-29 20:50:38 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-29 20:55:43 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-29 20:56:18 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-30 17:56:51 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-30 17:57:17 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-30 17:57:41 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-05-30 17:58:03 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-02 19:03:03 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-05 12:15:02 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-05 13:15:27 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-05 15:37:46 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-05 21:04:43 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-05 21:28:52 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-05 21:29:19 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-06 14:48:43 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-06 19:24:21 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-06 21:31:59 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-07 12:10:05 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-08 14:36:31 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-08 14:44:04 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-08 14:44:32 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-08 14:45:10 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-12 9:38:04 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-12 9:38:54 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-12 9:40:04 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-12 9:41:55 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-12 13:51:54 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-12 13:52:18 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-12 13:52:23 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-12 13:52:27 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-16 11:54:03 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-17 19:12:30 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-21 16:03:45 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-23 20:23:18 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-24 13:01:35 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-24 14:23:59 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-06-24 15:21:30 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+insert into `posts` (`content`, `created_at`, `external_link`, `flag`, `publish_date`, `site`, `slug`, `title`, `type`, `updated_at`) values ('<p>テスト</p>', '2025-06-25 20:54:13', 0, 2, '2025-06-25T20:54:13.740+09:00', 4, '6932n37k', 'テスト', 1, '2025-06-25 20:54:13') - Incorrect datetime value: '2025-06-25T20:54:13.740+09:00' for column `avp_prod`.`posts`.`publish_date` at row 1
+[ 2025-06-25 20:54:13 ]
+{ status: 400 }
+--------------------
+insert into `posts` (`content`, `created_at`, `external_link`, `flag`, `publish_date`, `site`, `slug`, `title`, `type`, `updated_at`) values ('<p>テスト</p>', '2025-06-26 03:43:43', 0, 2, '2025-06-26T03:43:41.798+09:00', 4, '2gznzew1', 'テスト', 1, '2025-06-26 03:43:43') - Incorrect datetime value: '2025-06-26T03:43:41.798+09:00' for column `avp_prod`.`posts`.`publish_date` at row 1
+[ 2025-06-26 3:43:43 ]
+{ status: 400 }
+--------------------
+insert into `posts` (`content`, `created_at`, `external_link`, `flag`, `publish_date`, `site`, `slug`, `title`, `type`, `updated_at`) values ('<p>テスト</p>', '2025-06-26 03:48:15', 0, 2, '2025-06-26T03:48:13.697+09:00', 4, 'rvavyz2p', 'テスト', 1, '2025-06-26 03:48:15') - Incorrect datetime value: '2025-06-26T03:48:13.697+09:00' for column `avp_prod`.`posts`.`publish_date` at row 1
+[ 2025-06-26 3:48:15 ]
+{ status: 400 }
+--------------------
+insert into `posts` (`content`, `created_at`, `external_link`, `flag`, `publish_date`, `site`, `slug`, `title`, `type`, `updated_at`) values ('<p>テスト</p>', '2025-06-26 03:56:08', 0, 2, '2025-06-26T03:56:06.345+09:00', 4, 'pjl3r7m7', 'テスト', 1, '2025-06-26 03:56:08') - Incorrect datetime value: '2025-06-26T03:56:06.345+09:00' for column `avp_prod`.`posts`.`publish_date` at row 1
+[ 2025-06-26 3:56:08 ]
+{ status: 400 }
+--------------------
+insert into `posts` (`content`, `created_at`, `external_link`, `flag`, `publish_date`, `site`, `slug`, `title`, `type`, `updated_at`) values ('<p>test</p>', '2025-06-26 04:00:25', 0, 2, '2025-06-26T04:00:23.569+09:00', 4, 'f71p6ds6', 'test', 1, '2025-06-26 04:00:25') - Incorrect datetime value: '2025-06-26T04:00:23.569+09:00' for column `avp_prod`.`posts`.`publish_date` at row 1
+[ 2025-06-26 4:00:25 ]
+{ status: 400 }
+--------------------
+[ 2025-06-26 14:41:30 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+production/ImageLibrary/テスト/image_1
+[ 2025-06-26 20:40:57 ]
+{
+  status: 400,
+  resultData: {
+    original: { status: 400, message: 's3 upload error!!!' },
+    uploaded: {
+      message: 's3 upload error!!!',
+      detail: 'E_CANNOT_WRITE_FILE: Cannot write file at location "production/ImageLibrary/テスト/image_1"',
+      status: 400
+    },
+    filename: 'image_1'
+  }
+}
+--------------------
+production/ImageLibrary/テスト/image_1
+[ 2025-06-26 20:41:15 ]
+{
+  status: 400,
+  resultData: {
+    original: { status: 400, message: 's3 upload error!!!' },
+    uploaded: {
+      message: 's3 upload error!!!',
+      detail: 'E_CANNOT_WRITE_FILE: Cannot write file at location "production/ImageLibrary/テスト/image_1"',
+      status: 400
+    },
+    filename: 'image_1'
+  }
+}
+--------------------
+[ 2025-07-10 0:52:46 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-10 0:54:42 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-10 0:54:50 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-10 14:31:41 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-10 14:32:01 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-15 18:15:11 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-15 18:15:15 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-15 18:16:48 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+
+
+[ 2025-07-18 14:52:30 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-18 14:52:34 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-18 20:12:08 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'An error occurred during calendar registration.'
+}
+--------------------
+[ 2025-07-19 23:23:12 ]
+{
+  status: 500,
+  reservationId: null,
+  message: 'An error occurred during calendar registration.'
+}
+--------------------
+[ 2025-07-22 20:02:47 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-25 10:32:01 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-25 10:32:12 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-25 10:32:23 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-31 8:51:16 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-31 8:51:23 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-07-31 8:51:29 ]
+{
+  status: 500,
+  message: 'Email address is not verified. The following identities failed the check in region US-WEST-2: service@akagi-venture.jp...'
+}
+--------------------
+[ 2025-08-06 16:11:05 ]
+{ status: 422, message: 'Invalid parameter error.' }
+--------------------
+[ 2025-08-06 16:11:15 ]
+{ status: 422, message: 'Invalid parameter error.' }
+--------------------

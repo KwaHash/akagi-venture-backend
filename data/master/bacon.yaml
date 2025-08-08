@@ -1,6 +1,6 @@
 limit:
-  all: 8
-  bbq: 6
+  all: 21
+  bbq: 15
   dayCamp: 4
 
 plans:
